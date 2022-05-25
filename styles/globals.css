@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+} */
+
+@layer base {
+  * {
+    @apply m-0 p-0 font-poppins box-border;
+  }
+
+  body {
+    @apply max-w-[90rem] mx-auto;
+  }
+
+  header {
+    @apply h-20 w-full relative top-0 left-0;
+  }
+}
